@@ -8,7 +8,7 @@ f=0.5;
 w=2*pi*f;
 duty=25;
 s=0.75*square(w*t,25)-0.25;
-subplot(3,1,1),plot(t,s,'r.-'), grid
+subplot(3,1,1),plot(t,s,'r.-'), grid, title('Semnal dr.'), xlabel('t(s)'), ylabel('A(V)')
 
 %rezolutie temp de 20ms
 t=0:0.02:2;
@@ -16,7 +16,7 @@ f=0.5;
 w=2*pi*f;
 duty=25;
 s=0.75*square(w*t,25)-0.25;
-subplot(3,1,2),plot(t,s,'r.-'), grid
+subplot(3,1,2),plot(t,s,'r.-'), grid,xlabel('t(s)'), ylabel('A(V)')
 
 %rezolutie temp de 200ms
 t=0:0.2:2;
@@ -24,4 +24,4 @@ f=0.5;
 w=2*pi*f;
 duty=25;
 s=0.75*square(w*t,25)-0.25;
-subplot(3,1,3),plot(t,s,'r.-'), grid
+subplot(3,1,3),plot(t,s,'r.-'), grid,xlabel('t(s)'), ylabel('A(V)')
